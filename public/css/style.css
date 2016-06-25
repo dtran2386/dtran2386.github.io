@@ -1,0 +1,136 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0; }
+
+#nav {
+  height: 55px;
+  background: #332d35;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 2%; }
+  #nav .nav, #nav a, #nav a:visited {
+    color: lightslategray;
+    text-decoration: none;
+    color: #f4f4f4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 1% 6% 1% 45%;
+    margin-bottom: 1%; }
+    #nav .nav a:hover, #nav a a:hover, #nav a:visited a:hover {
+      color: #ad0000;
+      transition-delay: 1s; }
+
+span#dylan {
+  font-size: 21px;
+  font-weight: 500;
+  border-top: 3px dotted #ad0000; }
+
+#who {
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin-top: 3.8%;
+  font-weight: 100;
+  font-size: 45px; }
+  #who #head {
+    height: 780px;
+    width: 100%; }
+  #who .heading {
+    text-align: center;
+    position: absolute;
+    left: 38%;
+    top: 13%;
+    color: #fff; }
+  #who #front {
+    font-size: 35px;
+    position: absolute;
+    text-align: center;
+    left: 34%;
+    top: 23%;
+    color: #fff; }
+
+.about {
+  color: #000;
+  text-align: center; }
+  .about #hello {
+    font-size: 25px;
+    padding: 0.5% 15% 2% 15%;
+    font-weight: 200; }
+
+.under {
+  border-bottom: 1px dotted lightgray;
+  text-align: center;
+  font-weight: 350;
+  text-transform: uppercase;
+  margin-top: 3%;
+  font-size: 35px; }
+
+.col-sm-4 {
+  padding: 2%; }
+
+#skills {
+  font-weight: 400;
+  text-align: center;
+  background: #f4f4f4;
+  border-top: 1px dotted lightgray;
+  border-bottom: 1px dotted lightgray; }
+
+.footer {
+  background-color: #332d35;
+  color: white; }
+  .footer .soc-media-ul {
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 1% 30% 1% 30%; }
+    .footer .soc-media-ul a, .footer .soc-media-ul a:visited {
+      text-decoration: none;
+      color: white; }
+    .footer .soc-media-ul a:hover {
+      color: #ad0000;
+      transition-delay: 1s; }
+  .footer #disclaimer {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 13px; }
+
+.profile {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  border: 2px solid rgba(51, 45, 53, 0.6);
+  margin-top: 1%; }
+
+#projects {
+  width: 100%;
+  transition: all .1s ease-in-out; }
+  #projects .proj {
+    display: inline-block;
+    height: 200px;
+    width: 250px;
+    margin: 2% 13% 2% 15%;
+    box-shadow: 0 0 6px rgba(132, 132, 132, 0.75);
+    border-radius: 4px;
+    background-color: #f4f4f4;
+    /*frame colour*/
+    padding: 8px;
+    /*frame size*/
+    padding-bottom: 45px; }
+  #projects img:hover {
+    transform: scale(2.2); }
+
+#exercises {
+  background: #f4f4f4;
+  display: block; }
+  #exercises .ex li {
+    display: inline-block;
+    border: 2px solid #332d35;
+    margin: 3%; }
+
+/* MEDIA QUERIES. WORK ON LATER */
