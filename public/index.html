@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Dylan K Tran's Portfolio</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" type="text/css" rel="stylesheet">
-<!--
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
--->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="public/css/style.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         <script src="js/app.js"></script>
     </head>
     
@@ -90,100 +91,95 @@
         <div>
             <p class="under">Simple, Solved JavaScript Exercises.</p>
             <ul class="ex">
-                <li>Max of Three</li>
-                <li>Palindrome</li>
-                <li>FizzBuzz</li>
-                <li>Factorial</li>
+                <li><a class="mod" href="#openMax">Max of Three</a></li>
+                <li><a class="mod" href="#openPal">Palindrome</a></li>
+                <li><a class="mod" href="#openFizz">FizzBuzz</a></li>
+                <li><a class="mod" href="#openFact">Factorial</a></li>
             </ul>
         </div>
     </section>
     
-    <!-- CONTACT FORM SECTION -->
-<!--
-    <section id="email">
-<?php
-	if (isset($_POST["submit"])) {
-		$name = $_POST['name'];
-		$email = $_POST['email'];
-		$message = $_POST['message'];
-		$human = intval($_POST['human']);
-		$from = 'Demo Contact Form'; 
-		$to = 'example@bootstrapbay.com'; 
-		$subject = 'Message from Contact Demo ';
-		
-		$body = "From: $name\n E-Mail: $email\n Message:\n $message";
- 
-		// Check if name has been entered
-		if (!$_POST['name']) {
-			$errName = 'Please enter your name';
-		}
-		
-		// Check if email has been entered and is valid
-		if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-			$errEmail = 'Please enter a valid email address';
-		}
-		
-		//Check if message has been entered
-		if (!$_POST['message']) {
-			$errMessage = 'Please enter your message';
-		}
-		//Check if simple anti-bot test is correct
-		if ($human !== 5) {
-			$errHuman = 'Your anti-spam is incorrect';
-		}
- 
-// If there are no errors, send the email
-if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
-	if (mail ($to, $subject, $body, $from)) {
-		$result='<div class="alert alert-success">Thank You! I will be in touch</div>';
-	} else {
-		$result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later</div>';
-	}
-}
-	}
-?>
-<form class="form-horizontal" role="form" method="post" action="index.php">
-	<div class="form-group">
-		<label for="name" class="col-sm-2 control-label">Name</label>
-		<div class="col-sm-10">
-			<input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
-			<?php echo "<p class='text-danger'>$errName</p>";?>
-		</div>
-	</div>
-	<div class="form-group">
-		<label for="email" class="col-sm-2 control-label">Email</label>
-		<div class="col-sm-10">
-			<input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="<?php echo htmlspecialchars($_POST['email']); ?>">
-			<?php echo "<p class='text-danger'>$errEmail</p>";?>
-		</div>
-	</div>
-	<div class="form-group">
-		<label for="message" class="col-sm-2 control-label">Message</label>
-		<div class="col-sm-10">
-			<textarea class="form-control" rows="4" name="message"><?php echo htmlspecialchars($_POST['message']);?></textarea>
-			<?php echo "<p class='text-danger'>$errMessage</p>";?>
-		</div>
-	</div>
-	<div class="form-group">
-		<label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
-		<div class="col-sm-10">
-			<input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
-			<?php echo "<p class='text-danger'>$errHuman</p>";?>
-		</div>
-	</div>
-	<div class="form-group">
-		<div class="col-sm-10 col-sm-offset-2">
-			<input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
-		</div>
-	</div>
-	<div class="form-group">
-		<div class="col-sm-10 col-sm-offset-2">
-			<?php echo $result; ?>	
-		</div>
-	</div>
-</form> 
-    </section>
--->
+
+<!-- MODAL BOX CONTENT SECTION -->
+<div id="openMax" class="modalDialog">
+    <div><a href="#close" title="Close" class="close">X</a>
+        	<h2>Max of Three</h2></br>
+        <p><b>Built-in JS method:</b> </br>Math.max(num1, num2, num3);</p></br>
+        <p><b>Method 2:</b></p>
+        <p>function maxOfThree(num1,num2,num3) { </br>
+              if (num1 > num2) { </br>
+                return num1; </br>
+              } else if (num2 > num3) { </br>
+                return num2; </br>
+              } else { </br>
+                return num3; </br>
+              } </br>
+            }       
+        </p>
+    </div>
+</div>
+
+<div id="openPal" class="modalDialog">
+    <div><a href="#close" title="Close" class="close">X</a>
+        	<h2>Palindrome</h2></br>
+    <p><b>Method 1:</b> </br>function palindrome(str) { </br>
+            var str = str.toLowerCase().replace(' ', ''); </br>
+            var palin = str.split("").reverse().join("");</br>
+            if (palin === str){</br>
+                return true;</br>
+            } else {</br>
+                return false;</br>
+            }</br>
+        }</p></br>
+        <p><b>Method 2:</b> </br>function palindrome(passage) { </br>
+                  // normalize to lower case.</br>
+                  passage = passage.toLowerCase();</br>
+                  // get rid of spaces.</br>
+                  passage = passage.replace(' ', '');</br>
+                  // you could reverse it if you want to here.</br>
+                  for (var i = 0; i < passage.length; i++) {</br>
+                    if (passage[i] !== passage[(passage.length -1) - i]) {</br>
+                      return false;</br>
+                    }</br>
+                  }</br>
+                  return true;</br>
+                }</p>
+    </div>
+</div>
+    
+<div id="openFizz" class="modalDialog">
+    <div><a href="#close" title="Close" class="close">X</a>
+        	<h2>FizzBuzz</h2></br>
+        <p>function FizzBuzz() { </br>
+            let num = []; </br>
+              for (let i = 1; i < 101; i++) { </br>
+                if (i % 3 === 0 && i % 5 === 0) { </br>
+                  num.push('FizzBuzz'); </br>
+                } else if (i % 5 === 0) { </br>
+                  num.push('Buzz'); </br>
+                } else if (i % 3 === 0) { </br>
+                  num.push('Fizz'); </br>
+                } else { </br>
+                  num.push(i); </br>
+                } </br>
+             } </br>
+              console.log(num); </br>
+            }; </br>
+                </br>
+            FizzBuzz();
+        </p>
+
+    </div>
+</div>
+    
+<div id="openFact" class="modalDialog">
+    <div><a href="#close" title="Close" class="close">X</a>
+        	<h2>Factorial</h2></br>
+        <p><img src="http://i.imgur.com/vAfbbCw.png"/></p>
+    </div>
+</div>
+
+<!-- END MODAL BOX CONTENT SECTION -->
     
     <!-- FOOTER SECTION -->
     <footer id="footer">
