@@ -6,17 +6,17 @@
 
 $red: #ad0000;
 $slate: rgba(51,45,53,1);
+$gray: #1a1a1a;
 
 #nav {
     height: 55px;
-    background: #fff;
+    background: url(http://cursa.ihmc.us/rid=1P9C9FJVQ-10NY5VR-28JT/white-polygon-background_02.jpg) center;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     margin-bottom: 2%;
     .nav, a, a:visited {
-            color: lightslategray;
             a:hover {
                 color: $red;
                 transition-delay: 0.1s;
@@ -29,7 +29,7 @@ $slate: rgba(51,45,53,1);
         list-style-type: none;
         padding: 1% 6% 1% 45%;
         margin-bottom: 1%;
-}
+        }
 }
 
 span#dylan {
@@ -51,7 +51,7 @@ span#dylan {
         position: absolute;
         left: 38%;
         top: 13%;
-        color: #fff;
+        color: #000;
     }
     font-weight: 100;
     font-size: 45px;
@@ -61,7 +61,7 @@ span#dylan {
         text-align: center;
         left: 34%;
         top: 23%;
-        color: #fff;
+        color: #000;
     }
 }
 
@@ -96,33 +96,6 @@ span#dylan {
     border-bottom: 1px dotted lightgray;
 }
 
-.footer {
-    background-color: #000;
-    color: white;
-    .soc-media-ul {
-        height: 30px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        list-style-type: none;
-        padding: 1% 30% 1% 30%;
-        a, a:visited {
-            text-decoration: none;
-            color: white;
-        }
-        a:hover {
-            color: $red;
-            transition-delay: 0.1s;
-        }
-    }
-    #disclaimer {
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 13px;
-        margin-top: 3%;
-    }
-}
-
 .profile {
     height: 200px;
     width: 200px;
@@ -149,31 +122,24 @@ span#dylan {
     }
 }
 
+// MODAL BOXES
 #exercises {
     background: #f4f4f4;
     display: block;
     height: 500px;
     .ex li {
         display: inline-block;
-        border: 2px solid $slate;
-        border-radius: 3px;
+        background-color: $gray;
+        border-radius: 7px;
         margin: 8%;
         padding: 1%;
     }
 }
 
-.soc-media-ul {
-    .email, .github, .linkedin {
-        height: 50px;
-        width: 50px;
-    }
-}
-
-// MODAL BOXES
-
 .mod {
     text-decoration: none;
-    color: $slate;
+    color: #fff;
+    font-size: 100%;
     font-weight: 600;
     .mod:visited {
         color: $slate;
@@ -200,7 +166,7 @@ span#dylan {
     pointer-events: auto;
 }
 .modalDialog > div {
-    width: 400px;
+    width: 530px;
     position: relative;
     margin: 10% auto;
     padding: 5px 20px 13px 20px;
@@ -231,6 +197,47 @@ span#dylan {
 .close:hover {
     background: #00d9ff;
 }
+// END MODAL BOXES
+
+// FOOTER
+.footer {
+    background: url(http://wallpapercave.com/wp/3jQbonO.jpg) center;
+    color: white;
+    .soc-media-ul {
+        height: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style-type: none;
+        padding: 1% 30% 1% 30%;
+        a, a:visited {
+            text-decoration: none;
+            color: white;
+        }
+        a:hover {
+            color: $red;
+            transition-delay: 0.1s;
+        }
+    }
+    #disclaimer {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 13px;
+        margin-top: 3%;
+    }
+}
+
+.soc-media-ul {
+    .email, .github, .linkedin {
+        height: 50px;
+        width: 50px;
+    }
+    img:hover {
+        background-color: #000;
+        border-radius: 50%;
+    }
+}
+// END FOOTER
 
         // SPRITES. WHY WON'T IT WORK!
 //.github, .linkedin, .email {

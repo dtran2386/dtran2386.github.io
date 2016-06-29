@@ -5,14 +5,13 @@
 
 #nav {
   height: 55px;
-  background: #fff;
+  background: url(http://cursa.ihmc.us/rid=1P9C9FJVQ-10NY5VR-28JT/white-polygon-background_02.jpg) center;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   margin-bottom: 2%; }
   #nav .nav, #nav a, #nav a:visited {
-    color: lightslategray;
     text-decoration: none;
     color: #332d35;
     display: flex;
@@ -44,14 +43,14 @@ span#dylan {
     position: absolute;
     left: 38%;
     top: 13%;
-    color: #fff; }
+    color: #000; }
   #who #front {
     font-size: 35px;
     position: absolute;
     text-align: center;
     left: 34%;
     top: 23%;
-    color: #fff; }
+    color: #000; }
 
 .about {
   color: #000;
@@ -78,28 +77,6 @@ span#dylan {
   background: #f4f4f4;
   border-top: 1px dotted lightgray;
   border-bottom: 1px dotted lightgray; }
-
-.footer {
-  background-color: #000;
-  color: white; }
-  .footer .soc-media-ul {
-    height: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style-type: none;
-    padding: 1% 30% 1% 30%; }
-    .footer .soc-media-ul a, .footer .soc-media-ul a:visited {
-      text-decoration: none;
-      color: white; }
-    .footer .soc-media-ul a:hover {
-      color: #ad0000;
-      transition-delay: 0.1s; }
-  .footer #disclaimer {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 13px;
-    margin-top: 3%; }
 
 .profile {
   height: 200px;
@@ -132,18 +109,15 @@ span#dylan {
   height: 500px; }
   #exercises .ex li {
     display: inline-block;
-    border: 2px solid #332d35;
-    border-radius: 3px;
+    background-color: #1a1a1a;
+    border-radius: 7px;
     margin: 8%;
     padding: 1%; }
 
-.soc-media-ul .email, .soc-media-ul .github, .soc-media-ul .linkedin {
-  height: 50px;
-  width: 50px; }
-
 .mod {
   text-decoration: none;
-  color: #332d35;
+  color: #fff;
+  font-size: 100%;
   font-weight: 600; }
   .mod .mod:visited {
     color: #332d35; }
@@ -168,7 +142,7 @@ span#dylan {
   pointer-events: auto; }
 
 .modalDialog > div {
-  width: 400px;
+  width: 530px;
   position: relative;
   margin: 10% auto;
   padding: 5px 20px 13px 20px;
@@ -198,5 +172,35 @@ span#dylan {
 
 .close:hover {
   background: #00d9ff; }
+
+.footer {
+  background: url(http://wallpapercave.com/wp/3jQbonO.jpg) center;
+  color: white; }
+  .footer .soc-media-ul {
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 1% 30% 1% 30%; }
+    .footer .soc-media-ul a, .footer .soc-media-ul a:visited {
+      text-decoration: none;
+      color: white; }
+    .footer .soc-media-ul a:hover {
+      color: #ad0000;
+      transition-delay: 0.1s; }
+  .footer #disclaimer {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-top: 3%; }
+
+.soc-media-ul .email, .soc-media-ul .github, .soc-media-ul .linkedin {
+  height: 50px;
+  width: 50px; }
+
+.soc-media-ul img:hover {
+  background-color: #000;
+  border-radius: 50%; }
 
 /* MEDIA QUERIES. WORK ON LATER */

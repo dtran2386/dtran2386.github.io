@@ -28,8 +28,9 @@
     <!-- HEADER IMAGE -->
         <div id="who" id="home" class="fadein">
 <!--            <img id="head" src="http://i.imgur.com/EfSvJB6.jpg" />-->
-            <img id="head" src="http://i.imgur.com/Xq6BoE3.jpg" />
+<!--            <img id="head" src="http://i.imgur.com/Xq6BoE3.jpg" />-->
 <!--            <img id="head" src="http://i.imgur.com/MOxAZf7.jpg" />-->
+            <img id="head" src="http://i.imgur.com/EGapG9o.jpg" />
             <p class="heading">Dylan K Tran</p>
             <p id="front">Front End Developer.</p>
         </div>
@@ -94,7 +95,7 @@
                 <li><a class="mod" href="#openMax">Max of Three</a></li>
                 <li><a class="mod" href="#openPal">Palindrome</a></li>
                 <li><a class="mod" href="#openFizz">FizzBuzz</a></li>
-                <li><a class="mod" href="#openFact">Factorial</a></li>
+                <li><a class="mod" href="#openFact">Narcissistic</a></li>
             </ul>
         </div>
     </section>
@@ -104,70 +105,21 @@
 <div id="openMax" class="modalDialog">
     <div><a href="#close" title="Close" class="close">X</a>
         	<h2>Max of Three</h2></br>
-        <p><b>Built-in JS method:</b> </br>Math.max(num1, num2, num3);</p></br>
-        <p><b>Method 2:</b></p>
-        <p>function maxOfThree(num1,num2,num3) { </br>
-              if (num1 > num2) { </br>
-                return num1; </br>
-              } else if (num2 > num3) { </br>
-                return num2; </br>
-              } else { </br>
-                return num3; </br>
-              } </br>
-            }       
-        </p>
+            <img src="https://github.com/dtran2386/dtran2386.github.io/blob/master/img/maxOfThree.png?raw=true" alt="maxOfThree"/>
     </div>
 </div>
 
 <div id="openPal" class="modalDialog">
     <div><a href="#close" title="Close" class="close">X</a>
         	<h2>Palindrome</h2></br>
-    <p><b>Method 1:</b> </br>function palindrome(str) { </br>
-            var str = str.toLowerCase().replace(' ', ''); </br>
-            var palin = str.split("").reverse().join("");</br>
-            if (palin === str){</br>
-                return true;</br>
-            } else {</br>
-                return false;</br>
-            }</br>
-        }</p></br>
-        <p><b>Method 2:</b> </br>function palindrome(passage) { </br>
-                  // normalize to lower case.</br>
-                  passage = passage.toLowerCase();</br>
-                  // get rid of spaces.</br>
-                  passage = passage.replace(' ', '');</br>
-                  // you could reverse it if you want to here.</br>
-                  for (var i = 0; i < passage.length; i++) {</br>
-                    if (passage[i] !== passage[(passage.length -1) - i]) {</br>
-                      return false;</br>
-                    }</br>
-                  }</br>
-                  return true;</br>
-                }</p>
+            <img src="https://github.com/dtran2386/dtran2386.github.io/blob/master/img/Palindrome.png?raw=true" alt="Palindrome"/>
     </div>
 </div>
     
 <div id="openFizz" class="modalDialog">
     <div><a href="#close" title="Close" class="close">X</a>
         	<h2>FizzBuzz</h2></br>
-        <p>function FizzBuzz() { </br>
-            let num = []; </br>
-              for (let i = 1; i < 101; i++) { </br>
-                if (i % 3 === 0 && i % 5 === 0) { </br>
-                  num.push('FizzBuzz'); </br>
-                } else if (i % 5 === 0) { </br>
-                  num.push('Buzz'); </br>
-                } else if (i % 3 === 0) { </br>
-                  num.push('Fizz'); </br>
-                } else { </br>
-                  num.push(i); </br>
-                } </br>
-             } </br>
-              console.log(num); </br>
-            }; </br>
-                </br>
-            FizzBuzz();
-        </p>
+        <img src="https://github.com/dtran2386/dtran2386.github.io/blob/master/img/FizzBuzz.png?raw=true" alt="FizzBuzz"/>
 
     </div>
 </div>
@@ -175,7 +127,7 @@
 <div id="openFact" class="modalDialog">
     <div><a href="#close" title="Close" class="close">X</a>
         	<h2>Narcissistic Numbers</h2></br>
-        <p><img src="http://i.imgur.com/vAfbbCw.png"/></p>
+            <p><img src="https://github.com/dtran2386/dtran2386.github.io/blob/master/img/narcissisticNumbers.png?raw=true"/></p>
     </div>
 </div>
 
