@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" type="text/css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
@@ -12,6 +13,151 @@
         <script src="js/app.js"></script>
     </head>
     
+    <!-- NAVIGATION TOP AND SIDE -->
+    <header> 
+      <nav class="navigation">
+        <div class="logotype">Dylan K Tran</div>
+        <ul class="categories">
+          <li><i class="fa fa-code"></i></li>
+          <li class="category-item"><a href="#about">About</a></li>
+          <li class="category-item"><a href="#skills">Skills</a></li>
+          <li class="category-item"><a href="#projects">Projects</a></li>
+          <li class="category-item"><a href="#exercises">JS.Exercises</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="wrapper">
+      <aside class="sidebar">
+        <ul class="sidebar-list">
+          <li class="sidebar-item"><i class="fa fa-github"><a href="www.github.com"></a></i></li>
+          <li class="sidebar-item sb-active"><a href="www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+          <li class="sidebar-item"><i class="fa fa-envelope"></i></li>
+          <li class="sidebar-item"><i class="fa fa-smile-o"></i></li>
+        </ul>
+      </aside>
+    </div>
+
+
+        <!-- ABOUT SECTION -->
+    <div class="contain">
+    <section id="about" class="about">
+            <p class="under">A little about me.</p>
+            <div class="about">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <img class="profile" src="http://i.imgur.com/w6inq5c.jpg" alt="profile pic"/>
+                    <p id="hello">My name is Dylan Tran and I am a Front End Developer located in Charlotte, NC. I've been learning and practicing a plethora of languages and technologies for over a year. My strongest skills are in HTML, CSS, and JavaScript. I am currently learning PHP, SQL, and Java as well, as even though I consider myself UI/UX, I won't limit myself to only Front End technologies!</p>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- SKILLS SECTION -->
+        <section id="skills">
+            <p class="under">Relevant skills.</p>
+            <div class="skills">
+            <div class="col-sm-4">
+              <h2 class="h3">HTML5/CSS3</h2>
+              <p>Knowledgeable in CSS preprocessors such as SASS.</p>
+            </div>
+            <div class="col-sm-4">
+              <h2 class="h3">JavaScript</h2>
+              <p>Good grasp of vanilla JavaScript as well as popular libraries such as jQuery.</p>
+            </div>
+            <div class="col-sm-4">
+              <h2 class="h3">MVC Frameworks</h2>
+              <p>Knowledgeable in AngularJS and BackboneJS.</p>
+            </div>
+            <div class="col-sm-4">
+              <h2 class="h3">PHP + SQL</h2>
+              <p>Comfortable in both PHP and SQL fundamentals.</p>
+            </div>
+            <div class="col-sm-4">
+              <h2 class="h3">Java</h2>
+              <p>Comfortable with Java basics and currently learning frameworks such as Spring.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects">
+            <div>
+                <p class="under">Projects I've Completed.</p>
+                    <a href="http://whentovisit.surge.sh/#/home" target="_blank"><img class="proj" src="https://i.imgur.com/MPptcu7.png" alt="when should i visit?" /></a>
+
+                    <a href="http://mammoth-brain.surge.sh/public/?car=on#/new" target="_blank"><img class="proj" src="http://i.imgur.com/wPOMbMg.png" alt="crazy taxi" /></a>
+
+                    <a href="http://marvel-database.surge.sh/#/list" target="_blank"><img class="proj" src="https://i.imgur.com/LMpMCSK.png" alt="marvel hero database" /></a>
+
+                    <a href="" target="_blank"><img class="proj" src="https://i.imgur.com/Yl8IQCF.png" alt="chat app" /></a>
+            </div>
+        </section>
+
+            <!-- JAVASCRIPT EXERCISES SECTION -->
+        <section id="exercises">
+            <div>
+                <p class="under">Simple, Solved JavaScript Exercises.</p>
+                <ul class="ex">
+                    <li><a class="mod" href="#openMax">Max of Three</a></li>
+                    <li><a class="mod" href="#openPal">Palindrome</a></li>
+                    <li><a class="mod" href="#openFizz">FizzBuzz</a></li>
+                    <li><a class="mod" href="#openFact">Narcissistic</a></li>
+                </ul>
+            </div>
+        </section>
+
+
+    <!-- MODAL BOX CONTENT SECTION -->
+    <div id="openMax" class="modalDialog">
+        <div><a href="#close" title="Close" class="close">X</a>
+                <h2>Max of Three</h2></br>
+                <img src="https://github.com/dtran2386/dtran2386.github.io/blob/master/img/maxOfThree.png?raw=true" alt="maxOfThree"/>
+        </div>
+    </div>
+
+    <div id="openPal" class="modalDialog">
+        <div><a href="#close" title="Close" class="close">X</a>
+                <h2>Palindrome</h2></br>
+                <img src="https://github.com/dtran2386/dtran2386.github.io/blob/master/img/Palindrome.png?raw=true" alt="Palindrome"/>
+        </div>
+    </div>
+
+    <div id="openFizz" class="modalDialog">
+        <div><a href="#close" title="Close" class="close">X</a>
+                <h2>FizzBuzz</h2></br>
+            <img src="https://github.com/dtran2386/dtran2386.github.io/blob/master/img/FizzBuzz.png?raw=true" alt="FizzBuzz"/>
+
+        </div>
+    </div>
+
+    <div id="openFact" class="modalDialog">
+        <div><a href="#close" title="Close" class="close">X</a>
+                <h2>Narcissistic Numbers</h2></br>
+                <p><img src="https://github.com/dtran2386/dtran2386.github.io/blob/master/img/narcissisticNumbers.png?raw=true"/></p>
+        </div>
+    </div>
+    </div>
+
+<!-- END MODAL BOX CONTENT SECTION -->
+    
+        <footer>
+          <p>This page was built using HTML5 elements, SASS, and a bit of jQuery.</p>
+        </footer>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 1st ATTEMPT'S CODE -->
     <!-- HEADER SECTION -->
     <header>
         <nav id="nav">
@@ -144,7 +290,3 @@
             <p id="disclaimer">.This website was built with vanilla HTML5, SASS, Bootstrap, and a bit of jQuery.</p>
         </div>
     </footer>
-    
-
-    </body>
-</html>
