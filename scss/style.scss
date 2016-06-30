@@ -56,11 +56,13 @@ header {
 }
 nav .categories {
   position: fixed;
-  height: 65px;
+  height: 72.5px;
   width: 100%;
   background: $nav-color;
   padding-top: 2%;
   margin-left: 8.5%;
+    top: 0;
+    left: 0;
 }
 
 .sidebar {
@@ -68,17 +70,20 @@ nav .categories {
   background-color: $teal;
   position: fixed;
   height: 100%;
+    left: 0;
+    margin-top: 0;
 }
 
-.sidebar-list {
+.sidebar-list a {
   display: flex;
   margin-top: 30px;
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
+    padding-bottom: 2%;
 }
 
-.sidebar-item {
+.sidebar-item a {
   margin-top: 25px;
   cursor: pointer;
   color: #3a3d46;
@@ -87,10 +92,6 @@ nav .categories {
   &:hover {
     color: $white;
   }
-}
-
-.sb-active {
-  color: $white;
 }
 
 .navigation {
@@ -103,13 +104,15 @@ nav .categories {
   display: flex;
   width: 120px;
   min-width: 120px;
-  height: 65px;
+  height: 73px;
   color: $white;
   background-color: $purple;
   font-weight: bold;
   position: fixed;
   align-items: center;
   justify-content: center;
+    top: 0;
+    left: 0;
 }
 
 .categories {
@@ -128,7 +131,7 @@ nav .categories {
   border: 1px solid $grey;
   width: 82%;
   margin-top: 5%;
-  height: 2150px;
+  height: 2250px;
 }
 
 .about {
@@ -157,7 +160,7 @@ nav .categories {
     font-weight: 400;
     text-align: center;
     border-top: 1px dotted lightgray;
-    border-bottom: 1px dotted lightgray;
+    margin-bottom: 5%;
 }
 
 .profile {
@@ -169,6 +172,7 @@ nav .categories {
 }
 #projects {
     width: 100%;
+    margin-bottom: 5%;
     .proj {
         display: inline-block;
         height: 200px;
