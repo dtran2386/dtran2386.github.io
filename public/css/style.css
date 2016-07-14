@@ -226,7 +226,7 @@ footer {
   color: #00748d;
   margin-left: 7.5%; }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   nav .categories {
     margin-left: 12%;
     padding-top: 7%;
