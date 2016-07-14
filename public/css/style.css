@@ -14,9 +14,7 @@ ul {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   font-family: "Raleway", sans-serif;
-  font-size: 14px;
   background: #e6e6e6; }
 
 .wrapper {
@@ -42,7 +40,7 @@ nav .categories {
   left: 0; }
 
 .sidebar {
-  min-width: 120px;
+  width: 120px;
   background-color: #00748d;
   position: fixed;
   height: 100%;
@@ -71,10 +69,9 @@ nav .categories {
   position: fixed;
   align-items: center; }
 
-.logotype {
+.logotype a {
   display: flex;
   width: 120px;
-  min-width: 120px;
   height: 73px;
   color: #ffffff;
   background-color: #201746;
@@ -84,6 +81,9 @@ nav .categories {
   justify-content: center;
   top: 0;
   left: 0; }
+
+.small {
+  display: none; }
 
 .categories {
   display: flex;
@@ -130,7 +130,7 @@ nav .categories {
   height: 200px;
   width: 200px;
   border-radius: 100px;
-  border: 2px solid rgba(51, 45, 53, 0.6);
+  border: 2px solid #201746;
   margin-top: 1%; }
 
 #projects {
@@ -157,7 +157,7 @@ nav .categories {
   height: 500px; }
   #exercises .ex li {
     display: inline-block;
-    background-color: #1a1a1a;
+    background-color: #00748d;
     border-radius: 7px;
     margin: 8%;
     padding: 1%; }
@@ -225,5 +225,36 @@ footer {
   text-align: center;
   color: #00748d;
   margin-left: 7.5%; }
+
+@media screen and (max-width: 400px) {
+  nav .categories {
+    margin-left: 12%;
+    padding-top: 7%;
+    font-size: 15px; }
+  .logotype {
+    width: 45px; }
+  .sidebar {
+    width: 48px; }
+  .under {
+    font-size: 20px;
+    padding-top: 7%; }
+  .contain {
+    height: 3050px;
+    width: 330px; }
+  footer p {
+    font-size: 10px; }
+  .big {
+    display: none; }
+  .small {
+    display: block;
+    padding-left: 40%; }
+  #hello {
+    font-size: 10px; }
+  .modalDialog div {
+    width: 340px; }
+    .modalDialog div img {
+      height: 350px;
+      width: 300px;
+      margin: 0; } }
 
 /* MEDIA QUERIES. WORK ON LATER */
