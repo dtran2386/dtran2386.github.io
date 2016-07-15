@@ -228,22 +228,28 @@ nav .categories {
 
 footer {
   text-align: center;
-  color: #00748d;
+  color: #201746;
   margin-left: 7.5%; }
+  footer .foot {
+    color: #00748d;
+    font-weight: 500; }
 
 @media screen and (max-width: 500px) {
   nav .categories {
-    margin-left: 49px;
+    margin-left: 45px;
     padding-top: 28px;
+    height: 72.5px;
     font-size: 15px;
     background-color: #201746;
     color: #ffffff; }
     nav .categories a {
       color: #ffffff; }
-  .logotype a {
-    background-color: #ffffff; }
+  .logotype {
+    width: 48px; }
+    .logotype a {
+      background-color: #ffffff; }
   .sidebar {
-    width: 49px; }
+    width: 45px; }
     .sidebar a {
       color: #f4f4f4; }
   .under {
@@ -253,7 +259,7 @@ footer {
     height: 2400px;
     width: 340px; }
   footer p {
-    font-size: 12.5px; }
+    font-size: 11px; }
   .big {
     display: none; }
   .small {
@@ -262,7 +268,7 @@ footer {
   .hello {
     font-size: 16px;
     text-align: justify;
-    padding: 1.5%; }
+    padding: 2%; }
   .modalDialog div {
     width: 340px; }
     .modalDialog div img {

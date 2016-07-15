@@ -63,7 +63,7 @@ nav .categories {
     left: 0;
     margin-left: 92.5px;
     a:hover {
-        color: #3a3d46;
+        color: $teal;
     }
 }
 
@@ -277,15 +277,20 @@ nav .categories {
 
 footer {
     text-align: center;
-    color: $teal;
+    color: $purple;
     margin-left: 7.5%;
+    .foot {
+        color: $teal;
+        font-weight: 500;
+    }
 }
 
 // MEDIA QUERIES
 @media screen and (max-width: 500px) {
     nav .categories {
-        margin-left: 49px;
+        margin-left: 45px;
         padding-top: 28px;
+        height: 72.5px;
         font-size: 15px;
         background-color: $purple;
         color: $white;
@@ -293,11 +298,14 @@ footer {
             color: $white;
         }
     }
-    .logotype a {
-        background-color: $white;
+    .logotype {
+        width: 48px;
+        a {
+            background-color: $white;
+        }
     }
     .sidebar {
-        width: 49px;
+        width: 45px;
         a {
             color: #f4f4f4;
         }
@@ -311,7 +319,7 @@ footer {
         width: 340px;
     }
     footer p {
-        font-size: 12.5px;
+        font-size: 11px;
     }
     .big {
         display: none;
@@ -323,7 +331,7 @@ footer {
     .hello {
         font-size: 16px;
         text-align: justify;
-        padding: 1.5%;
+        padding: 2%;
     }
     .modalDialog div {
         width: 340px;
