@@ -37,7 +37,6 @@ body {
   flex-direction: column;
 //  min-height: 100vh;
   font-family: "Raleway", sans-serif;
-//  font-size: 14px;
   background: $grey;
 }
 
@@ -59,14 +58,14 @@ nav .categories {
   height: 72.5px;
   width: 100%;
   background: $nav-color;
-  padding-top: 2%;
-  margin-left: 8.5%;
+  padding-top: 25px;
     top: 0;
     left: 0;
+    margin-left: 92.5px;
 }
 
 .sidebar {
-  width: 120px;
+  width: 92.5px;
   background-color: $teal;
   position: fixed;
   height: 100%;
@@ -101,17 +100,17 @@ nav .categories {
 }
 
 .logotype a {
-  display: flex;
-  width: 120px;
+  width: 92.5px;
   height: 73px;
   color: $white;
   background-color: $purple;
   font-weight: bold;
   position: fixed;
-  align-items: center;
-  justify-content: center;
+    text-align: center;
     top: 0;
     left: 0;
+    font-size: 14px;
+    padding-top: 28px;
 }
 
 .small {
@@ -129,7 +128,7 @@ nav .categories {
 }
 
 .contain {
-  margin-left: 13%;
+  margin-left: 12%;
   background: $white;
   border: 1px solid $grey;
   width: 82%;
@@ -278,12 +277,17 @@ footer {
 // MEDIA QUERIES
 @media screen and (max-width: 500px) {
     nav .categories {
-        margin-left: 12%;
-        padding-top: 7%;
+        margin-left: 49px;
+        padding-top: 28px;
         font-size: 15px;
+        background-color: $purple;
+        color: $white;
+        a {
+            color: $white;
+        }
     }
-    .logotype {
-        width: 45px;
+    .logotype a {
+        background-color: $white;
     }
     .sidebar {
         width: 49px;
@@ -293,21 +297,23 @@ footer {
         padding-top: 7%;
     }
     .contain {
-        height: 3050px;
-        width: 330px;
+        height: 2400px;
+        width: 340px;
     }
     footer p {
-        font-size: 10px;
+        font-size: 12.5px;
     }
     .big {
         display: none;
     }
     .small {
-        display: block;
-        padding-left: 40%;
+        display: inline-block;
+        color: $gray;
     }
-    #hello {
-        font-size: 10px;
+    .hello {
+        font-size: 16px;
+        text-align: justify;
+        padding: 1.5%;
     }
     .modalDialog div {
         width: 340px;

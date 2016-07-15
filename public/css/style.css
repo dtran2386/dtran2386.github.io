@@ -34,13 +34,13 @@ nav .categories {
   height: 72.5px;
   width: 100%;
   background: #ffffff;
-  padding-top: 2%;
-  margin-left: 8.5%;
+  padding-top: 25px;
   top: 0;
-  left: 0; }
+  left: 0;
+  margin-left: 92.5px; }
 
 .sidebar {
-  width: 120px;
+  width: 92.5px;
   background-color: #00748d;
   position: fixed;
   height: 100%;
@@ -70,17 +70,17 @@ nav .categories {
   align-items: center; }
 
 .logotype a {
-  display: flex;
-  width: 120px;
+  width: 92.5px;
   height: 73px;
   color: #ffffff;
   background-color: #201746;
   font-weight: bold;
   position: fixed;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   top: 0;
-  left: 0; }
+  left: 0;
+  font-size: 14px;
+  padding-top: 28px; }
 
 .small {
   display: none; }
@@ -94,7 +94,7 @@ nav .categories {
   margin: 0 10px; }
 
 .contain {
-  margin-left: 13%;
+  margin-left: 12%;
   background: #ffffff;
   border: 1px solid #e6e6e6;
   width: 82%;
@@ -228,28 +228,34 @@ footer {
 
 @media screen and (max-width: 500px) {
   nav .categories {
-    margin-left: 12%;
-    padding-top: 7%;
-    font-size: 15px; }
-  .logotype {
-    width: 45px; }
+    margin-left: 49px;
+    padding-top: 28px;
+    font-size: 15px;
+    background-color: #201746;
+    color: #ffffff; }
+    nav .categories a {
+      color: #ffffff; }
+  .logotype a {
+    background-color: #ffffff; }
   .sidebar {
     width: 49px; }
   .under {
     font-size: 20px;
     padding-top: 7%; }
   .contain {
-    height: 3050px;
-    width: 330px; }
+    height: 2400px;
+    width: 340px; }
   footer p {
-    font-size: 10px; }
+    font-size: 12.5px; }
   .big {
     display: none; }
   .small {
-    display: block;
-    padding-left: 40%; }
-  #hello {
-    font-size: 10px; }
+    display: inline-block;
+    color: #1a1a1a; }
+  .hello {
+    font-size: 16px;
+    text-align: justify;
+    padding: 1.5%; }
   .modalDialog div {
     width: 340px; }
     .modalDialog div img {
