@@ -1,16 +1,13 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserify = require('gulp-browserify');
+var browserSync = require('browser-sync').create();
 
-gulp.task('default', ['html', 'temps', 'js', 'css', 'img']);
+gulp.task('default', ['html', 'js', 'css', 'img']);
 
 gulp.task('html', function () {
     return gulp.src('./*.html')
         .pipe(gulp.dest('./public'));
-});
-gulp.task('temps', function () {
-    return gulp.src('./templates/*.html')
-        .pipe(gulp.dest('./public/templates'));
 });
 
 gulp.task('css', function () {
@@ -20,19 +17,43 @@ gulp.task('css', function () {
 });
 
 gulp.task('js', function () {
-    return gulp.src('./js/app.js')
+    return gulp.src('./js/*.js')
         .pipe(browserify())
         .pipe(gulp.dest('./public/js'));
 });
 
 gulp.task('img', function () {
-    return gulp.src('./resource/*')
-        .pipe(gulp.dest('./public/resource/'));
+    return gulp.src('img/*')
+        .pipe(gulp.dest('./public/img'));
 });
 
-gulp.task('watch', function () {
-    gulp.watch('./*.html', ['html']);
-    gulp.watch('./scss/*.scss', ['css']);
-    gulp.watch('./js/*.js', ['js']);
-    gulp.watch('./js/*/*.js', ['js']);
+gulp.task('browserSync', function() {
+  browserSync.init({
+    server: {
+      baseDir: 'app'
+    },
+  })
 });
+
+gulp.task('sass', function() {
+  return gulp.src('./scss/*.scss') // Gets all files ending with .scss in app/scss
+    .pipe(sass())
+    .pipe(gulp.dest('./public/css'))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
+});
+
+gulp.task('watch', ['browserSync', 'sass'], function (){
+  gulp.watch('./scss/*.scss', ['sass']);
+  // Reloads the browser whenever HTML or JS files change
+  gulp.watch('./*.html', browserSync.reload);
+  gulp.watch('./js/*.js', browserSync.reload); 
+});
+
+// gulp.task('watch', function () {
+//     gulp.watch('./*.html', ['html']);
+//     gulp.watch('./scss/*.scss', ['css']);
+//     gulp.watch('./js/*.js', ['js']);
+//     gulp.watch('./js/*/*.js', ['js']);
+// });
