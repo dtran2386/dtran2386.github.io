@@ -1,307 +1,525 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Dylan K Tran's Portfolio</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" type="text/css" rel="stylesheet">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <script src="js/app.js"></script>
-    </head>
-    
-    <!-- NAVIGATION TOP AND SIDE -->
-    <header> 
-      <nav class="navigation">
-        <div class="logotype big"><a href="#">Dylan K Tran</a></div>
-        <div class="logotype small"><a href="#"></a></div>
-        <ul class="categories">
-          <li>&nbsp;&nbsp;<i class="fa fa-code"></i></li>
-          <li class="category-item"><a href="#about">About</a></li>
-          <li class="category-item"><a href="#skills">Skills</a></li>
-          <li class="category-item"><a href="#projects">Projects</a></li>
-          <li class="category-item"><a href="#exercises">JS.Exercises</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="wrapper">
-      <aside class="sidebar">
-        <ul class="sidebar-list">
-            <li class="sidebar-item"><a href="https://github.com/dtran2386" target="_blank"><i class="fa fa-github"></i></a></li>
-            <li class="sidebar-item"><a href="https://www.linkedin.com/in/dylanktran" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-            <li class="sidebar-item"><a href="mailto:dtran2386@gmail.com"><i class="fa fa-envelope"></i></a></li>
-            <li class="sidebar-item"><a href="https://dtran2386.github.io/img/FrontEndResume2016a.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a></li>
-            <li class="sidebar-item"><a href="http://fontawesome.io/cheatsheet/" target="_blank"><i class="fa fa-smile-o"></i></a></li>
-        </ul>
-      </aside>
+<html lang="en">
+<head>
+  <title>Dylan Tran's Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <script src="js/app.js"></script>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#myPage">DKT</a>
     </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://dtran2386.github.io/img/QAresume2016.pdf" target="_blank">R&Eacute;SUM&Eacute;</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">PROJECTS
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#projects">When Should I Visit?</a></li>
+            <li><a href="http://mammoth-brain.surge.sh/public/?car=on" target="_blank">Taxi Man 4.</a></li>
+            <li><a href="http://codepen.io/dtran2386/pen/ygZgrV" target="_blank">Simple Calculator</a></li>
+            <li><a href="#">narcissisticNumbers</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#jsExercises">JS EXERCISES</a></li>
 
-
-        <!-- ABOUT SECTION -->
-    <div class="contain">
-    <section id="about" class="about">
-            <p class="under">A little about me.</p>
-            <div class="about">
-                <div class="col-sm-6 col-sm-offset-3">
-                    <img class="profile" src="http://i.imgur.com/w6inq5c.jpg" alt="profile pic"/>
-                    <p class="hello">My name is Dylan Tran and I am a Front End Developer located in Charlotte, NC. I've been learning and practicing a plethora of languages and technologies for over a year. My strongest skills are in HTML, CSS, and JavaScript. I am currently learning PHP, SQL, Python and Java as well.</p>
-                </div>
-            </div>
-        </section>
-        
-
-        <!-- SKILLS SECTION -->
-        <section id="skills">
-            <p class="under">Relevant skills.</p>
-            <div class="skills">
-            <div class="col-sm-4">
-              <h2 class="h3">HTML5/CSS3</h2>
-              <p>Knowledgeable in CSS preprocessors such as SASS.</p>
-            </div>
-            <div class="col-sm-4">
-              <h2 class="h3">JavaScript</h2>
-              <p>Good grasp of vanilla JavaScript as well as popular libraries such as jQuery.</p>
-            </div>
-            <div class="col-sm-4">
-              <h2 class="h3">MVC Frameworks</h2>
-              <p>Knowledgeable in AngularJS and BackboneJS.</p>
-            </div>
-            <div class="col-sm-4">
-              <h2 class="h3">PHP + SQL</h2>
-              <p>Comfortable in both PHP and SQL fundamentals.</p>
-            </div>
-            <div class="col-sm-4">
-              <h2 class="h3">Python</h2>
-              <p>Comfortable with Python basics and currently learning frameworks such as Django.</p>
-            </div>
-          </div>
-        </section>
-
-        <!-- PROJECTS SECTION -->
-        <section id="projects">
-            <div>
-                <p class="under">Projects I've Completed.</p>
-                    <a href="http://whentovisit.surge.sh/#/home" target="_blank"><img class="proj" src="https://i.imgur.com/MPptcu7.png" alt="when should i visit?" /></a>
-
-                    <a href="http://mammoth-brain.surge.sh/public/?car=on#/new" target="_blank"><img class="proj" src="http://i.imgur.com/wPOMbMg.png" alt="crazy taxi" /></a>
-
-                    <a href="http://marvel-database.surge.sh/#/list" target="_blank"><img class="proj" src="https://i.imgur.com/LMpMCSK.png" alt="marvel hero database" /></a>
-
-                    <a href="" target="_blank"><img class="proj" src="https://i.imgur.com/Yl8IQCF.png" alt="chat app" /></a>
-            </div>
-        </section>
-
-            <!-- JAVASCRIPT EXERCISES SECTION -->
-        <section id="exercises">
-            <div>
-                <p class="under">Simple, Solved JavaScript Exercises.</p>
-                <ul class="ex">
-                    <li><a class="mod" href="#openMax">Max of Three</a></li>
-                    <li><a class="mod" href="#openPal">Palindrome</a></li>
-                    <li><a class="mod" href="#openFizz">FizzBuzz</a></li>
-                    <li><a class="mod" href="#openFact">Narcissistic</a></li>
-                </ul>
-            </div>
-        </section>
-
-
-    <!-- MODAL BOX CONTENT SECTION -->
-    <div id="openMax" class="modalDialog">
-        <div><a href="#close" title="Close" class="close">X</a>
-                <h2>Max of Three</h2></br>
-                <img src="https://github.com/dtran2386/dtran2386.github.io/blob/master/img/maxOfThree.png?raw=true" alt="maxOfThree"/>
-        </div>
+        <li><a href="#"><span class="fa fa-code"></span></a></li>
+      </ul>
     </div>
+  </div>
+</nav>
 
-    <div id="openPal" class="modalDialog">
-        <div><a href="#close" title="Close" class="close">X</a>
-                <h2>Palindrome</h2></br>
-                <img src="https://github.com/dtran2386/dtran2386.github.io/blob/master/img/Palindrome.png?raw=true" alt="Palindrome"/>
-        </div>
+<div id="banner">
+	<div id="bannertext">
+		<h1>Dylan K Tran</h1>
+		<p>Front-End Developer.</p>
+	</div>
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container text-center">
+  <h3>A LITTLE ABOUT ME.</h3>
+  <p><em>xin ch&agrave;o!</em></p>
+  <p>My name is Dylan Tran and I am a Front End Developer located in Charlotte, NC. I've been learning and implementing a plethora of languages and technologies for roughly <span id="tenure">1.5 years</span>. My strongest skills are in HTML, CSS, and JavaScript. I am currently learning Node.js, ES6, Express, and MongoDB as well.</p>
+  <br>
+  <p>I'm currently employed as a lead Software Quality Assurance Analyst for Harris Teeter LLC. Here, I am also spearheading the automation efforts for regression testing of harristeeter.com using Selenium WebDriver + Node.js and Mocha.
+</div>
+
+<!-- Skills section -->
+<div id="skills" class="container text-center lightgrey">
+  <h3>SKILLS.</h3>
+  <p><em>A list of my relevant skills.</em></p>
+  <br>
+  <div class="row pad">
+    <div class="col-sm-4">
+      <p class="text-center closer"><strong>HTML5/CSS3</strong></p><br>
+      <a href="#demo" data-toggle="collapse">
+        <i class="devicon-css3-plain icon1" alt="HTML5"><span class="fa fa-caret-down icon2 north"></span></i>
+      </a>
+      <div id="demo" class="collapse justify-text padUp">
+        <p>&diams; Knowledgeable in new elements/features found in HTML5 like form validation.</p>
+        <p>&diams; Can adequately utilize CSS preprocessors such as SASS.</p>
+        <p>&diams; Experience: 2 years</p>
+      </div>
     </div>
-
-    <div id="openFizz" class="modalDialog">
-        <div><a href="#close" title="Close" class="close">X</a>
-                <h2>FizzBuzz</h2></br>
-            <img src="https://github.com/dtran2386/dtran2386.github.io/blob/master/img/FizzBuzz.png?raw=true" alt="FizzBuzz"/>
-
-        </div>
+    <div class="col-sm-4">
+      <p class="text-center closer"><strong>JavaScript</strong></p><br>
+      <a href="#demo2" data-toggle="collapse">
+        <i class="devicon-javascript-plain icon1" alt="JavaScript"><span class="fa fa-caret-down icon2 north"></span></i>
+      </a>
+      <div id="demo2" class="collapse justify-text padUp">
+        <p>&diams; Under the hood knowledge.</p>
+        <p>&diams; Capable of writing vanilla JS.</p>
+        <p>&diams; Experience: 1.5 years.</p>
+      </div>
     </div>
-
-    <div id="openFact" class="modalDialog">
-        <div><a href="#close" title="Close" class="close">X</a>
-                <h2>Narcissistic Numbers</h2></br>
-                <p><img src="https://github.com/dtran2386/dtran2386.github.io/blob/master/img/narcissisticNumbers.png?raw=true"/></p>
-        </div>
+    <div class="col-sm-4">
+      <p class="text-center closer"><strong>Node.js</strong></p><br>
+      <a href="#demo3" data-toggle="collapse">
+        <i class="devicon-nodejs-plain icon1"><span class="fa fa-caret-down icon2"></span></i>
+      </a>
+      <div id="demo3" class="collapse justify-text padUp">
+        <p>&diams; Express knowledge.</p>
+        <p>&diams; Simple server builds.</p>
+        <p>&diams; Experience: 1 year.</p>
+      </div>
     </div>
+  </div>
+<!-- 2ND ROW OF SKILLS ICONS-->
+  <div class="row pad">
+    <div class="col-sm-4">
+      <p class="text-center closer"><strong>AngularJS</strong></p><br>
+      <a href="#demo4" data-toggle="collapse">
+        <i class="devicon-angularjs-plain icon1" alt="HTML5"><span class="fa fa-caret-down icon2"></span></i>
+      </a>
+      <div id="demo4" class="collapse justify-text padUp">
+        <p>&diams; Good understanding of MVC design, custom filters, expressions, and directives.</p>
+        <p>&diams; Created a map project which also incorporated many API calls using promises.</p>
+        <p>&diams; Experience: 1.25 years.</p>
+      </div>
     </div>
-
-<!-- END MODAL BOX CONTENT SECTION -->
-    
-        <footer>
-          <p>This page was built using <span class="foot">HTML5</span> elements, <span class="foot">SASS</span>, and a bit of <span class="foot">jQuery</span>.</p>
-        </footer>
-    </body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 1st ATTEMPT'S CODE -->
-    <!-- HEADER SECTION -->
-<!--
-    <header>
-        <nav id="nav">
-            <ul class="nav">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#exercises">JS.Exercises</a></li>
-            </ul>
-        </nav>
-    </header>
-<body>
--->
-    
-    <!-- HEADER IMAGE -->
-<!--        <div id="who" id="home" class="fadein">-->
-<!--            <img id="head" src="http://i.imgur.com/EfSvJB6.jpg" />-->
-<!--            <img id="head" src="http://i.imgur.com/Xq6BoE3.jpg" />-->
-<!--
-            <img id="head" src="http://i.imgur.com/MOxAZf7.jpg" />
-            <img id="head" src="http://i.imgur.com/EGapG9o.jpg" />
-            <p class="heading">Dylan K Tran</p>
-            <p id="front">Front End Developer.</p>
-        </div>
--->
-    
-<!--
-     ABOUT SECTION 
-    <section id="about" class="about">
-        <p class="under">A little about me.</p>
-        <div class="about">
-            <div class="col-sm-6 col-sm-offset-3">
-                <img class="profile" src="http://i.imgur.com/w6inq5c.jpg" alt="profile pic"/>
-                <p id="hello">Hello, my name is Dylan Tran and I am a Front End Developer located in Charlotte, NC. I've been learning and practicing a plethora of languages and technologies for over a year. My strongest skills are in HTML, CSS, and JavaScript. I am currently learning PHP, SQL, and Java as well, as even though I consider myself UI/UX, I won't limit myself to only Front End technologies!</p>
-            </div>
-        </div>
-    </section>
--->
-    
-    <!-- SKILLS SECTION -->
-<!--
-    <section id="skills">
-        <p class="under">Relevant skills.</p>
-        <div class="skills">
-        <div class="col-sm-4">
-          <h2 class="h3">HTML5/CSS3</h2>
-          <p>Knowledgeable in CSS preprocessors such as SASS.</p>
-        </div>
-        <div class="col-sm-4">
-          <h2 class="h3">JavaScript</h2>
-          <p>Good grasp of vanilla JavaScript as well as popular libraries such as jQuery.</p>
-        </div>
-        <div class="col-sm-4">
-          <h2 class="h3">MVC Frameworks</h2>
-          <p>Knowledgeable in AngularJS and BackboneJS.</p>
-        </div>
-        <div class="col-sm-4">
-          <h2 class="h3">PHP + SQL</h2>
-          <p>Comfortable in both PHP and SQL fundamentals.</p>
-        </div>
-        <div class="col-sm-4">
-          <h2 class="h3">Java</h2>
-          <p>Comfortable with Java basics and currently learning frameworks such as Spring.</p>
+    <div class="col-sm-4">
+      <p class="text-center closer"><strong>Selenium WebDriver</strong></p><br>
+      <a href="#demo5" data-toggle="collapse">
+        <i class="devicon-gitlab-plain icon1" alt="JavaScript"><span class="fa fa-caret-down icon2"></span></i>
+      </a>
+      <div id="demo5" class="collapse justify-text padUp">
+        <p>&diams; Decent understanding of the Selenium style used to write scripts.</p>
+        <p>&diams; Capable of writing scripts using JavaScript(Node.js and Mocha).</p>
+        <p>&diams; Experience: 5 months.</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center closer"><strong>Testing Frameworks/Build Tools</strong></p><br>
+      <a href="#demo6" data-toggle="collapse">
+        <i class="devicon-gulp-plain icon1"><span class="fa fa-caret-down icon2"></span></i>
+      </a>
+      <div id="demo6" class="collapse justify-text padUp">
+        <p>&diams; Able to write custom tasks and pipe to appropriate destination.</p>
+        <p>&diams; Good knowledge of requiring necessary modules.</p>
+        <p>&diams; Experience: 1.25 years.</p>
+      </div>
+    </div>
+  </div>
+<!-- 3RD ROW OF SKILLS AND ICONS -->
+  <div class="row pad">
+    <div class="col-sm-4">
+      <p class="text-center closer"><strong>Bootstrap</strong></p><br>
+      <a href="#demo7" data-toggle="collapse">
+        <i class="devicon-bootstrap-plain icon1" alt="HTML5"><span class="fa fa-caret-down icon2"></span></i>
+      </a>
+      <div id="demo7" class="collapse justify-text padUp">
+        <p>&diams; Knowledgeable in implementation methods.</p>
+        <p>&diams; Can adequately alter built-in Bootstrap code to suit needs.</p>
+        <p>&diams; Experience: 1 year.</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center closer"><strong>jQuery</strong></p><br>
+      <a href="#demo8" data-toggle="collapse">
+        <i class="devicon-jquery-plain-wordmark icon1" alt="JavaScript"><span class="fa fa-caret-down icon2"></span></i>
+      </a>
+      <div id="demo8" class="collapse justify-text padUp">
+        <p>&diams; Adequate knowledge of implementing pre-built functions.</p>
+        <p>&diams; Good understanding of how to manipulate built-in methods as needed.</p>
+        <p>&diams; Experience: 1 year.</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center closer"><strong>CSS Preprocessors</strong></p><br>
+      <a href="#demo9" data-toggle="collapse">
+        <i class="devicon-sass-original icon1"><span class="fa fa-caret-down icon2"></span></i>
+      </a>
+      <div id="demo9" class="collapse justify-text padUp">
+        <p>&diams; Good understanding of mixins, nesting, imports, etc.</p>
+        <p>&diams; Good understanding of its use cases.</p>
+        <p>&diams; Experience: 1.25 years.</p>
+      </div>
+    </div>
+  </div>
+<!-- 4TH ROW OF SKILLS ICONS-->
+    <div class="row">
+      <div class="col-sm-4">
+        <p class="text-center closer"><strong>Backbone.js</strong></p><br>
+        <a href="#demo10" data-toggle="collapse">
+          <i class="devicon-backbonejs-plain icon1" alt="HTML5"><span class="fa fa-caret-down icon2"></span></i>
+        </a>
+        <div id="demo10" class="collapse justify-text padUp">
+          <p>&diams; Good understanding of its MVC design and capabilities.</p>
+          <p>&diams; Was able to create a game similar to 'Snake' using this framework.</p>
+          <p>&diams; Experience: 1.25 years.</p>
         </div>
       </div>
-    </section>
--->
-    
-    <!-- PROJECTS SECTION -->
-<!--
-    <section id="projects">
-        <div>
-            <p class="under">Projects I've Completed.</p>
-                <a href="http://whentovisit.surge.sh/#/home" target="_blank"><img class="proj" src="https://i.imgur.com/MPptcu7.png" alt="when should i visit?" /></a>
-
-                <a href="http://mammoth-brain.surge.sh/public/?car=on#/new" target="_blank"><img class="proj" src="http://i.imgur.com/wPOMbMg.png" alt="crazy taxi" /></a>
-
-                <a href="http://marvel-database.surge.sh/#/list" target="_blank"><img class="proj" src="https://i.imgur.com/LMpMCSK.png" alt="marvel hero database" /></a>
-
-                <a href="" target="_blank"><img class="proj" src="https://i.imgur.com/Yl8IQCF.png" alt="chat app" /></a>
+      <div class="col-sm-4">
+        <p class="text-center closer"><strong>JIRA/Confluence</strong></p><br>
+        <a href="#demo11" data-toggle="collapse">
+          <i class="devicon-confluence-plain icon1" alt="JavaScript"><span class="fa fa-caret-down icon2"></span></i>
+        </a>
+        <div id="demo11" class="collapse justify-text padUp">
+          <p>&diams; Good understanding of ticket creation, tracking, and general board maintenance.</p>
+          <p>&diams; Capable of using Confluence to document storyboards, mock-ups, etc.</p>
+          <p>&diams; Experience: 6 months.</p>
         </div>
-    </section>
-    
-         JAVASCRIPT EXERCISES SECTION 
-    <section id="exercises">
-        <div>
-            <p class="under">Simple, Solved JavaScript Exercises.</p>
-            <ul class="ex">
-                <li><a class="mod" href="#openMax">Max of Three</a></li>
-                <li><a class="mod" href="#openPal">Palindrome</a></li>
-                <li><a class="mod" href="#openFizz">FizzBuzz</a></li>
-                <li><a class="mod" href="#openFact">Narcissistic</a></li>
-            </ul>
+      </div>
+      <!-- <div class="col-sm-4">
+        <p class="text-center closer"><strong>Testing Frameworks/Build Tools</strong></p><br>
+        <a href="#demo12" data-toggle="collapse">
+          <i class="devicon-gulp-plain icon1"><span class="fa fa-caret-down icon2"></span></i>
+        </a>
+        <div id="demo12" class="collapse justify-text">
+          <p>&diams; Express knowledge.</p>
+          <p>&diams; Simple server builds.</p>
+          <p>&diams; Experience: 1.25 years.</p>
         </div>
-    </section>
--->
-    
-
-<!-- MODAL BOX CONTENT SECTION -->
-<!--
-<div id="openMax" class="modalDialog">
-    <div><a href="#close" title="Close" class="close">X</a>
-        	<h2>Max of Three</h2></br>
-            <img src="https://github.com/dtran2386/dtran2386.github.io/blob/master/img/maxOfThree.png?raw=true" alt="maxOfThree"/>
+      </div> -->
     </div>
-</div>
+</div> <!-- END SKILLS SECTION -->
 
-<div id="openPal" class="modalDialog">
-    <div><a href="#close" title="Close" class="close">X</a>
-        	<h2>Palindrome</h2></br>
-            <img src="https://github.com/dtran2386/dtran2386.github.io/blob/master/img/Palindrome.png?raw=true" alt="Palindrome"/>
-    </div>
-</div>
-    
-<div id="openFizz" class="modalDialog">
-    <div><a href="#close" title="Close" class="close">X</a>
-        	<h2>FizzBuzz</h2></br>
-        <img src="https://github.com/dtran2386/dtran2386.github.io/blob/master/img/FizzBuzz.png?raw=true" alt="FizzBuzz"/>
+<!-- Container (Projects Section) -->
+<div id="projects" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">PROJECTS.</h3>
+    <p class="text-center">A List of projects I've completed.<br></p>
 
-    </div>
-</div>
-    
-<div id="openFact" class="modalDialog">
-    <div><a href="#close" title="Close" class="close">X</a>
-        	<h2>Narcissistic Numbers</h2></br>
-            <p><img src="https://github.com/dtran2386/dtran2386.github.io/blob/master/img/narcissisticNumbers.png?raw=true"/></p>
-    </div>
-</div>
--->
-
-<!-- END MODAL BOX CONTENT SECTION -->
-    
-    <!-- FOOTER SECTION -->
-<!--
-    <footer id="footer">
-        <div class="footer">
-        <ul class="soc-media-ul">
-            <li><a href="https://www.github.com/dtran2386" target="_blank"><img class="github" src="https://i.imgur.com/UCXuNN4.png"></a></li>
-            <li><a href="https://www.linkedin.com/in/dylanktran" target="_blank"><img class="linkedin" src="https://i.imgur.com/vAfbbCw.png"/></a></li>
-            <li><a href="mailto:dtran2386@gmail.com"><img class="email" src="https://i.imgur.com/1PuAceh.png"></a></li>
-        </ul>
-            <p id="disclaimer">.This website was built with vanilla HTML5, SASS, Bootstrap, and a bit of jQuery.</p>
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img class="projImg projHover" src="https://i.imgur.com/MPptcu7.png" alt="When Should I Visit?">
+          <p><strong>When Should I Visit?</strong></p>
+          <p>Completed: May 2016</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Details</button>
         </div>
-    </footer>-->
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img class="projImg projHover" src="http://i.imgur.com/wPOMbMg.png" alt="Taxi Man 4">
+          <p><strong>Taxi Man 4</strong></p>
+          <p>Completed: April 2016</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal2">Details</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img class="projImg projHover" src="img/simpleCalc.png" alt="Simple Calculator">
+          <p><strong>Simple JS Calculator</strong></p>
+          <p>Completed: July 2016</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal3">Details</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img class="projImg projHover" src="img/cssjsclock.png" alt="CSS + JS Clock">
+          <p><strong>CSS + JS Clock</strong></p>
+          <p>Completed: December 2016</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal4">Details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 1: when should i visit-->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&nbsp;&nbsp;×</button>
+          <h4>When Should I Visit?</h4>
+        </div>
+        <div class="modal-body">
+            <div>
+              <p><span class="glyphicon glyphicon-link"></span> <a href="http://whentovisit.surge.sh/#/home" target="_blank">Click here for a working demo.</a></p>
+            </div>
+            <div class="blackText">
+              <h4><span class="glyphicon glyphicon-info-sign"></span> Notes:</h4>
+              <p>⋅  Built upon the AngularJS framework. Shows various destinations within the U.S.</p>
+              <p>⋅	Incorporated GIS data to create SVG renderings of individual states and map of the U.S.</p>
+              <p>⋅	Utilized APIs from Foursquare, OpenWeatherMap, GettyImages, and WorldWeatherOnline to receive necessary data and render into the DOM.</p>
+              <p>⋅	Clickable states and cities, which then render the appropriate information for clicked location.</p>
+              <p>⋅	Used CSS Bootstrap to create image slider showing results from GettyImages API.</p>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-block" data-dismiss="modal"><span class="glyphicon glyphicon-remove-sign"></span>&nbsp;&nbsp;Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: crazy taxi 4-->
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&nbsp;&nbsp;×</button>
+          <h4>Taxi Man 4</h4>
+        </div>
+        <div class="modal-body">
+            <div>
+              <p><span class="glyphicon glyphicon-link"></span> <a href="http://mammoth-brain.surge.sh/public/?car=on#/new" target="_blank">Click here for a working demo.</a></p>
+            </div>
+            <div class="blackText">
+              <h4><span class="glyphicon glyphicon-info-sign"></span> Notes:</h4>
+              <p>⋅	Built upon Backbone.JS framework</p>
+              <p>⋅	Game app that allows a player to first choose a vehicle, Corolla or Land Cruiser, which player can then control with arrow keys to move around and pick up passengers.</p>
+              <p>⋅	Every time the player moves, they lose fuel. 3 fuel points lost if Land Cruiser is chosen and 1 fuel point lost if Corolla is chosen.</p>
+              <p>⋅	Each time a passenger is picked up, a new passenger is generated at a random location on the grid.</p>
+              <p>⋅	Included a JavaScript library, MouseTrap, to allow usage of arrow keys instead of having to click buttons.</p>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-block" data-dismiss="modal"><span class="glyphicon glyphicon-remove-sign"></span>&nbsp;&nbsp;Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: simple js calculator-->
+  <div class="modal fade" id="myModal3" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&nbsp;&nbsp;×</button>
+          <h4>Simple JS Calculator</h4>
+        </div>
+        <div class="modal-body">
+            <div>
+              <p><span class="glyphicon glyphicon-link"></span> <a href="http://codepen.io/dtran2386/pen/ygZgrV" target="_blank">Click here for a working demo.</a></p>
+            </div>
+            <div class="blackText">
+              <h4><span class="glyphicon glyphicon-info-sign"></span> Notes:</h4>
+              <p>⋅	Built using HTML, CSS, and vanilla JavaScript.</p>
+              <p>⋅	Experimented with CSS gradient and shadow properties.</p>
+              <p>⋅	Fully functional basic calculator.</p>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-block" data-dismiss="modal"><span class="glyphicon glyphicon-remove-sign"></span>&nbsp;&nbsp;Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 4: css + js clock-->
+  <div class="modal fade" id="myModal4" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&nbsp;&nbsp;×</button>
+          <h4>CSS + JS Clock</h4>
+        </div>
+        <div class="modal-body">
+            <div>
+              <p><span class="glyphicon glyphicon-link"></span> <a href="http://codepen.io/dtran2386/pen/rjPEvM" target="_blank">Click here for a working demo.</a></p>
+            </div>
+            <div class="blackText">
+              <h4><span class="glyphicon glyphicon-info-sign"></span> Notes:</h4>
+              <p>⋅	Built using HTML, CSS, and vanilla JavaScript.</p>
+              <p>⋅	Experimented with CSS transition propery and ES6 syntax.</p>
+              <p>⋅	Real-time functioning basic clock.</p>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-block" data-dismiss="modal"><span class="glyphicon glyphicon-remove-sign"></span>&nbsp;&nbsp;Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container">
+  <h3 class="text-center">CONTACT.</h3>
+
+  <div class="row">
+    <div class="col-md-4 soc">
+      <p>Relevant Links:</p>
+      <p><span class="fa fa-linkedin"></span>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/dylanktran" target="_blank">LinkedIn</a></p>
+      <p><span class="fa fa-github-alt"></span>&nbsp;&nbsp;<a href="https://github.com/dtran2386" target="_blank">GitHub</a></p>
+      <p><span class="fa fa-envelope"></span>&nbsp;&nbsp;<a href="mailto:dtran2386@gmail.com">Email Me</a></p>
+    </div>
+    <div class="col-md-8 wufooForm">
+      <div id="wufoo-z60b0810lzr3m">
+        </div>
+        <script type="text/javascript">var z60b0810lzr3m;(function(d, t) {
+        var s = d.createElement(t), options = {
+        'userName':'dtran2386',
+        'formHash':'z60b0810lzr3m',
+        'autoResize':true,
+        'height':'497',
+        'async':true,
+        'host':'wufoo.com',
+        'header':'hide',
+        'ssl':true};
+        s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+        s.onload = s.onreadystatechange = function() {
+        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+        try { z60b0810lzr3m = new WufooForm();z60b0810lzr3m.initialize(options);z60b0810lzr3m.display(); } catch (e) {}};
+        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+        })(document, 'script');</script>
+    </div>
+
+    <!-- <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="subject" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="to" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="content" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" id="sendBtn" type="submit">Send</button>
+        </div>
+        <span id="message"></span>
+      </div>
+    </div> -->
+  </div>
+  <br>
+</div>
+
+<div class="container lightgrey" id="jsExercises">
+  <h3 class="text-center">JAVASCRIPT EXERCISES.</h3>
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home" id="FizzBuzz">FizzBuzz</a></li>
+    <li><a data-toggle="tab" href="#menu1" id="maxOfThree">Max of Three</a></li>
+    <li><a data-toggle="tab" href="#menu2" id="Palindrome">Palindrome</a></li>
+    <li><a data-toggle="tab" href="#menu3" id="narcissisticNumbers">Narcissistic Numbers</a></li>
+    <li><a data-toggle="tab" href="#menu4" id="reverseThisNumber">Reverse a Number</a></li>
+    <li><a data-toggle="tab" href="#menu5" id="vowelCount">Count # of Vowels in a String</a></li>
+    <li><a data-toggle="tab" href="#menu6" id="createRandom">Generate a Random String</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active text-center">
+      <h2>FizzBuzz!</h2>
+      <img class="exerImg" src="img/FizzBuzz.png" />
+    </div>
+    <div id="menu1" class="tab-pane fade text-center">
+      <h2>Max of Three.</h2>
+      <img class="exerImg" src="img/maxOfThree.png" />
+    </div>
+    <div id="menu2" class="tab-pane fade text-center">
+      <h2>Palindrome.</h2>
+      <img class="exerImg" src="img/Palindrome.png" />
+    </div>
+    <div id="menu3" class="tab-pane fade text-center">
+      <h2>Narcissistic Numbers.</h2>
+      <img class="exerImg" src="img/narcissisticNumbers.png" />
+    </div>
+    <div id="menu4" class="tab-pane fade text-center">
+      <h2>Reverse a Number.</h2>
+      <img class="exerImg" src="img/reverseThisNumber.png" />
+    </div>
+    <div id="menu5" class="tab-pane fade text-center">
+      <h2>Count # of Vowels in a String.</h2>
+      <img class="exerImg" src="img/vowelCount.png" />
+    </div>
+    <div id="menu6" class="tab-pane fade text-center">
+      <h2>Generate a Random String.</h2>
+      <img class="exerImg" src="img/createRandom.png" />
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>This webpage was made with Bootstrap (for content), SASS (for styling structure), and jQuery (for dynamic interactions).</p>
+</footer>
+
+<!-- code for time -->
+<!-- <script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+	m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('tenure').innerHTML =
+    "1 year, " + "5 months, " + h + " hours " + m + " minutes " + s + " seconds";
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script> -->
+
+<!-- <script>
+$(document).ready( function() {
+  var from, to, subject, text;
+  $("#sendBtn").click( function() {
+    to = $("#to").val();
+    subject = $("#subject").val();
+    text = $("content").val();
+    $("#message").text("Sending Email... Please Wait");
+    $.get("/send", {
+      to:to, subject:subject, text:text}, function(data) {
+        if(data == "sent") {
+          $("#message").empty().html("Email has been sent at " + to + " . Please check inbox! ");
+      }
+    });
+  });
+});
+</script> -->
+</body>
+</html>
