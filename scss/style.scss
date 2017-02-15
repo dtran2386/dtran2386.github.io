@@ -21,20 +21,11 @@ h3, h4 {
 .person:hover {
     border-color: #f1f1f1;
 }
-.carousel-inner img {
-    -webkit-filter: grayscale(40%);
-    filter: grayscale(40%); /* make all photos black and white */
-    width: 100%; /* Set width to 100% */
-    margin: auto;
-}
-.carousel-caption h3 {
-    color: #fff !important;
-}
-@media (max-width: 600px) {
-  .carousel-caption {
-    display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
-  }
-}
+// @media (max-width: 600px) {
+//   .carousel-caption {
+//     display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+//   }
+// }
 .bg-1 {
     background: #344152;
     color: #bdbdbd;
@@ -89,6 +80,9 @@ h3, h4 {
     font-size: 11px !important;
     letter-spacing: 4px;
     opacity: 0.9;
+    -webkit-box-shadow: 0px 10px 5px 0px rgba(83,81,107,0.2);
+    -moz-box-shadow: 0px 10px 5px 0px rgba(83,81,107,0.2);
+    box-shadow: 0px 10px 5px 0px rgba(83,81,107,0.2);
 }
 .navbar li a, .navbar .navbar-brand {
     color: #d5d5d5 !important;
