@@ -58,3 +58,16 @@ $(document).ready(function(){
 		EasyPeasyParallax();
 	});
 }); // END CODE FOR BACKGROUND IMAGE
+
+// BEGINNING OF CODE FOR BACKGROUND IMAGE before SKILLS
+function EasyPeasyParallax2() {
+	scrollPos = $(this).scrollTop();
+	$('#banner2').css({
+		'background-position' : '50% ' + (-scrollPos/4)+"px"
+	});
+}
+$(document).ready(function(){
+	$(window).scroll(function() {
+		EasyPeasyParallax2();
+	});
+}); // END CODE FOR BACKGROUND IMAGE
