@@ -193,32 +193,18 @@ h2 {
   height: 100%;
   width: 100%; }
 
-#banner2 {
-  background: url("../img/halong4.jpg") no-repeat fixed 50% 0;
-  background-size: cover;
-  color: #fff;
-  height: .5%;
-  width: 100%; }
-
 #banner3 {
   background: url("../img/halong2.jpg") no-repeat fixed 50% 0;
   background-size: cover;
   color: #fff;
-  height: 50%;
-  width: 100%; }
-
-#banner4 {
-  background: url("../img/halongclouds.jpg") no-repeat fixed 50% 0;
-  background-size: cover;
-  color: #fff;
-  height: 35%;
+  height: 60%;
   width: 100%; }
 
 #banner5 {
   background: url("../img/phuquocboat.jpg") no-repeat fixed 50% 0;
   background-size: cover;
   color: #fff;
-  height: 50%;
+  height: 60%;
   width: 100%; }
 
 #bannertext {
