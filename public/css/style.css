@@ -21,22 +21,6 @@ h3, h4 {
 .person:hover {
   border-color: #f1f1f1; }
 
-.carousel-inner img {
-  -webkit-filter: grayscale(40%);
-  filter: grayscale(40%);
-  /* make all photos black and white */
-  width: 100%;
-  /* Set width to 100% */
-  margin: auto; }
-
-.carousel-caption h3 {
-  color: #fff !important; }
-
-@media (max-width: 600px) {
-  .carousel-caption {
-    display: none;
-    /* Hide the carousel text when the screen is less than 600 pixels wide */ } }
-
 .bg-1 {
   background: #344152;
   color: #bdbdbd; }
@@ -94,7 +78,10 @@ h3, h4 {
   border: 0;
   font-size: 11px !important;
   letter-spacing: 4px;
-  opacity: 0.9; }
+  opacity: 0.9;
+  -webkit-box-shadow: 0px 10px 5px 0px rgba(83, 81, 107, 0.2);
+  -moz-box-shadow: 0px 10px 5px 0px rgba(83, 81, 107, 0.2);
+  box-shadow: 0px 10px 5px 0px rgba(83, 81, 107, 0.2); }
 
 .navbar li a, .navbar .navbar-brand {
   color: #d5d5d5 !important; }
@@ -145,7 +132,7 @@ textarea {
   width: 100%; }
 
 .justify-text {
-  text-align: justify; }
+  text-align: left; }
 
 .icon1 {
   font-size: 60px;
@@ -160,7 +147,7 @@ textarea {
   margin-bottom: 0; }
 
 img.projImg {
-  height: 200px;
+  height: 230px;
   width: 100%; }
 
 .blackText {
@@ -206,6 +193,34 @@ h2 {
   height: 100%;
   width: 100%; }
 
+#banner2 {
+  background: url("../img/halong4.jpg") no-repeat fixed 50% 0;
+  background-size: cover;
+  color: #fff;
+  height: .5%;
+  width: 100%; }
+
+#banner3 {
+  background: url("../img/halong2.jpg") no-repeat fixed 50% 0;
+  background-size: cover;
+  color: #fff;
+  height: 50%;
+  width: 100%; }
+
+#banner4 {
+  background: url("../img/halongclouds.jpg") no-repeat fixed 50% 0;
+  background-size: cover;
+  color: #fff;
+  height: 35%;
+  width: 100%; }
+
+#banner5 {
+  background: url("../img/phuquocboat.jpg") no-repeat fixed 50% 0;
+  background-size: cover;
+  color: #fff;
+  height: 50%;
+  width: 100%; }
+
 #bannertext {
   width: 24em;
   position: fixed;
@@ -221,7 +236,7 @@ h2 {
   #bannertext {
     font-size: 1em; }
   #banner {
-    height: 50%; }
+    height: 60%; }
   .exerImg {
     width: 250px;
     height: 250px; }
